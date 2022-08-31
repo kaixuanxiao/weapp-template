@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "gd-icon": "@gd/weui/gd-icon/gd-icon"
+  }
+}

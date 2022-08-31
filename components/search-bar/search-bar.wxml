@@ -1,0 +1,21 @@
+<view class="search-bar" style="{{styleText}}">
+  <view class="search {{focus ? 'search_focus' : ''}} {{searchInput ? 'search_filled' : ''}}">
+    <view class="input-wrapper">
+      <input bindinput="onSearchInput" bindfocus="onFocus" bindblur="onBlur" class="search__input"
+        maxlength="{{maxlength || 50}}" value="{{searchInput}}" />
+      <view class="icon-clear-wrapper" bindtap="onClear">
+        <gd-icon customext-class="icon-clear" class-prefix="gd-color-icon" name="close-circle-bg" color="gray" size="20" />
+      </view>
+      <view class="search__placeholder">
+        <gd-icon name="search" color="#b5e8da" size="20" />
+        <text class="search__placeholder__text">{{placeholder}}</text>
+      </view>
+    </view>
+    <view class="prefix">
+      <slot name="prefix"></slot>
+    </view>
+    <view class="suffix">
+      <slot name="suffix"></slot>
+    </view>
+  </view>
+</view>

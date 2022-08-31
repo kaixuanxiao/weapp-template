@@ -1,0 +1,4 @@
+<!--components/page-top-bg/page-top-bg.wxml-->
+<view class="page-top-bg" style="{{style}}">
+  <image wx:if="{{bgUrl}}" src="{{bgUrl}}" mode="aspectFill" style="width: 100%;height: 100%;" />
+</view>

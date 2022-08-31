@@ -1,0 +1,26 @@
+/** *
+格式化
+*@params money {Number or String} 金额
+*@params digit {Number} 小数点的位数，不够补0
+*@returns {String} 格式化后的金额
+**/
+function formatMoney(money, digit = 2) {
+  let tpMoney
+  if (!money) return '0.00'
+  tpMoney = money
+  // tpMoney = String(tpMoney).replace(/,/g, '')
+  tpMoney = Number(tpMoney)
+  if (isNaN(tpMoney)) {
+    return money
+  }
+  tpMoney = tpMoney.toFixed(digit) + ''
+  // eslint-disable-next-line no-useless-escape
+  const re = getRegExp('^(-?\d+)(\d{3})(\.?\d*)')
+  while (re.test(tpMoney)) {
+    tpMoney = tpMoney.replace(re, '$1,$2$3')
+  }
+  return tpMoney
+}
+module.exports = {
+  formatMoney: formatMoney,
+}

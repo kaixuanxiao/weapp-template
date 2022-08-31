@@ -1,0 +1,8 @@
+{
+  "files.eol": "\n",
+  "editor.tabSize": 2,
+  "editor.wordWrapColumn": 120,
+  "typescript.format.semicolons": "remove",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single"
+}

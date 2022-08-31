@@ -1,0 +1,14 @@
+<gd-navigation-bar home="{{false}}" color="#FFFFFF" background="#00CD96" title="小程序模板" placeholder />
+
+<gd-cells title="使用组件库">
+  <gd-cell title="@gd/weui" is-link url="/pages/demo-gd-weui/demo-gd-weui" />
+</gd-cells>
+
+<gd-cells title="其它demo">
+  <gd-cell title="列表" is-link url="/pages/demo-list/demo-list?test=1" />
+  <gd-cell title="状态管理Mobx" is-link url="/pages/demo-store/demo-store" />
+  <gd-cell title="计算属性" is-link url="/pages/demo-computed/demo-computed" />
+</gd-cells>
+
+<gd-vant-tabbar />
+

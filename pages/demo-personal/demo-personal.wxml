@@ -1,0 +1,21 @@
+<page-top-bg height="290" bg-url="/images/personal/head-bg.png" />
+<gd-navigation-bar home="{{false}}" color="white" background="#00cd96" changeable-background title="我的" />
+<view class="personal-info-box">
+  <view class="avatar">
+    <open-data type="userAvatarUrl" default-avatar="/images/personal/avatar-default.png"></open-data>
+  </view>
+  <view class="other-info">
+    <view class="other-info__name text-trunc">
+      <open-data type="userNickName" default-text="用户昵称" binderror="onOpenDataError"></open-data>
+    </view>
+    <view class="other-info__phone">13123456789</view>
+  </view>
+</view>
+
+<gd-cells title="store">
+  <gd-button slot="title-right" size="small" type="primary" bind:click="navigateToDemoStore">去修改</gd-button>
+  <gd-cell title="姓名" value="{{userInfo.name}}" />
+  <gd-cell title="年龄" value="{{userInfo.age}}" />
+</gd-cells>
+
+<gd-vant-tabbar />

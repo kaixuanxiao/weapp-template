@@ -1,0 +1,13 @@
+page {
+  --c-primary: #00cd96;
+  --c-bg-primary: #00cd96;
+  --c-bg: #f7f8f9;
+  --c-border: #ebebeb;
+  --c-blue: #4893ff;
+  --c-warn: #ff7a42;
+  --c-light-gray: #ebebeb;
+  --c-placeholder: #808080;
+
+  --page-bottom-bar-height: 108rpx;
+  --search-bar-height: 108rpx;
+}

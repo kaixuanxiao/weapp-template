@@ -1,0 +1,10 @@
+
+<user-info></user-info>
+
+<gd-cells title="编辑 UserInfo" custom-class="userinfo-cells">
+  <gd-form-cell title="姓名" value="{{user.userInfo.name}}" bind:input="onNameInput" />
+  <gd-form-cell title="年龄" value="{{user.userInfo.age}}" bind:input="onAgeInput" />
+</gd-cells>
+<view style="padding: 10px 16px;">
+  <gd-button type="primary" bindtap="user.reset" block>重置 bindtap=user.reset</gd-button>
+</view>

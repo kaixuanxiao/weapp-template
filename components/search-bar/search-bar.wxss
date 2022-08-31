@@ -1,0 +1,86 @@
+/* components/search-bar/search-bar.wxss */
+
+.search-bar {
+  box-sizing: border-box;
+  width: 100%;
+  /* height: var(--search-bar-height); */
+  background: var(--c-bg-primary);
+  padding: 18rpx 32rpx;
+  color: white;
+  z-index: 10;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  border-radius: 8rpx;
+  background: #08b486;
+}
+
+.input-wrapper {
+  flex: 1;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.search__input {
+  height: 72rpx;
+  line-height: 72rpx;
+  /* padding-right和clear图标宽度相同，这样在手机上点击图标才会触发 */
+  padding: 0 72rpx 0 16rpx;
+}
+
+.search__placeholder {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 72rpx;
+  line-height: 72rpx;
+  padding: 0 16rpx;
+  font-size: 32rpx;
+  font-weight: 400;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 0;
+  transition: all .5s;
+}
+
+.search__placeholder__text {
+  color: #b5e8da;
+  vertical-align: top;
+}
+
+.icon-clear-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  padding: 0 16rpx;
+  top: 0;
+  right: -72rpx;
+  opacity: 0;
+  z-index: 10;
+  pointer-events: all;
+  transition: right .5s linear, opacity .5s linear;
+}
+
+.icon-clear {
+  width: 40rpx;
+  height: 40rpx;
+  opacity: .5;
+}
+
+.search_focus .icon-clear-wrapper {
+  opacity: 1;
+  right: 0rpx;
+}
+
+.search_focus .search__placeholder {
+  left: 0;
+  transform: translateX(0);
+}
+
+.search_filled .search__placeholder {
+  display: none;
+}

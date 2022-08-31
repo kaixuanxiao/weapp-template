@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "Golden WeUI 组件示例",
+  "navigationBarBackgroundColor": "#00CD96",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "gd-area-picker": "@gd/weui/gd-area-picker/gd-area-picker",
+    "gd-form": "@gd/weui/gd-form/gd-form",
+    "gd-cells": "@gd/weui/gd-cells/gd-cells",
+    "gd-form-cell": "@gd/weui/gd-form-cell/gd-form-cell",
+    "gd-popup-selector": "@gd/weui/gd-popup-selector/gd-popup-selector",
+    "gd-countdown-button": "@gd/weui/gd-countdown-button/gd-countdown-button",
+    "gd-button": "@gd/weui/gd-button/gd-button"
+  }
+}

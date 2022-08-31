@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/demo-home/demo-home",
+    "pages/demo-personal/demo-personal",
+    "pages/demo-list/demo-list",
+    "pages/demo-gd-weui/demo-gd-weui",
+    "pages/demo-store/demo-store",
+    "pages/demo-computed/demo-computed"
+  ],
+  "usingComponents": {},
+  "window": {
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "小程序模板",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#ffffff",
+    "navigationStyle": "default"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#999999",
+    "selectedColor": "#1ac56d",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/demo-home/demo-home",
+        "text": "首页",
+        "iconPath": "images/icon-home.png",
+        "selectedIconPath": "images/icon-home-on.png"
+      },
+      {
+        "pagePath": "pages/demo-personal/demo-personal",
+        "text": "我的",
+        "iconPath": "images/icon-personal.png",
+        "selectedIconPath": "images/icon-personal-on.png"
+      }
+    ]
+  },
+  "subPackages": [],
+  "networkTimeout": {
+    "request": 6000,
+    "connectSocket": 6000,
+    "uploadFile": 60000,
+    "downloadFile": 60000
+  },
+  "useExtendedLib": {
+    "weui": true
+  },
+  "sitemapLocation": "sitemap.json"
+}

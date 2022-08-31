@@ -1,0 +1,15 @@
+/* components/sateful/custom-tabbar/custom-tabbar.wxss */
+.tabbar-item{
+  border-top: 1px solid #f3f3f3;
+}
+.tabbar-item-icon {
+  width: 64rpx;
+  height: 64rpx;
+  margin-bottom: -12rpx;
+}
+.van-tabbar-item__text{
+  font-size: 20rpx;
+}
+.van-tabbar-item__icon {
+  margin-top: 0 !important;
+}

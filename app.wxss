@@ -1,0 +1,4 @@
+@import "styles/variable.wxss";
+@import "styles/vant/index.wxss";
+@import "styles/custom.wxss";
+@import "styles/page.wxss";

@@ -1,0 +1,31 @@
+<gd-form id="form" models="{{formData}}" rules="{{rules}}" bind:itemchange="onFormItemChange">
+  <gd-cells title="" cell-title-width="5em">
+    <gd-form-cell prop="shopId" title="门店ID" value="{{formData.shopId}}" disabled />
+    <gd-form-cell prop="shopName" title="门店名称" value="{{formData.shopName}}" required clearable />
+    <gd-form-cell prop="shopType" title="门店类型" value="{{formData.shopType}}" required readonly is-link >
+      <gd-popup-selector slot="trigger" data="{{shopTypes}}" selected="{{formData.shopType}}" bind:change="onShopTypeChange" />
+    </gd-form-cell>
+    <gd-form-cell prop="area" title="所属地区" value="{{formData.area}}" border="{{false}}" required readonly is-link >
+      <gd-area-picker slot="trigger" area-list="{{areaList}}" value="{{formData.area}}" bind:confirm="onAreaConfirm" />
+    </gd-form-cell>
+  </gd-cells>
+  <gd-cells title="其他信息">
+    <gd-form-cell prop="idcard" input-type="idcard" title="身份证号码" value="{{formData.idcard}}" required clearable />
+    <gd-form-cell prop="age" input-type="number" title="年龄" value="{{formData.age}}" required clearable />
+    <gd-form-cell prop="opened" type="switch" title="开启" value="{{formData.opened}}" required />
+    <gd-form-cell prop="openedDisabled" type="switch" title="禁用状态" value="{{formData.openedDisabled}}" required disabled />
+    <gd-form-cell prop="accessed" type="radio-group" title="是否通过" value="{{formData.accessed}}" list="{{[{label: '已通过', value: true}, { label: '未通过', value: false }]}}" />
+    <gd-form-cell prop="interest" type="checkbox-group" title="爱好" value="{{formData.interest}}" list="{{[{label: '唱歌', value: 1}, { label: '跳舞', value: 2 }, { label: '写代码', value: 3 }]}}" />
+    <gd-form-cell prop="password" input-type="password" title="密码" value="{{formData.password}}" maxlength="{{18}}" required clearable />
+    <gd-form-cell prop="passwordRepeat" input-type="password" title="确认密码" value="{{formData.passwordRepeat}}" maxlength="{{18}}" required clearable />
+    <gd-form-cell prop="code" title="手机验证码" value="{{formData.code}}" required clearable>
+      <gd-countdown-button id="countdownBtn" slot="button" bind:sendsms="onSendSms" countdown="{{60}}">
+        发送验证码
+      </gd-countdown-button>
+    </gd-form-cell>
+    <gd-form-cell prop="note" type="textarea" title="备注" value="{{formData.note}}" autosize clearable border="{{false}}" />
+  </gd-cells>
+</gd-form>
+<view style="padding: 16px;">
+  <gd-button type="primary" bindtap="onSubmit" block>提交</gd-button>
+</view>

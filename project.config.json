@@ -1,0 +1,165 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": [
+      {
+        "type": "file",
+        "value": "package-lock.json"
+      },
+      {
+        "type": "file",
+        "value": ".eslintrc.js"
+      },
+      {
+        "type": "folder",
+        "value": ".vscode"
+      },
+      {
+        "type": "folder",
+        "value": "docs"
+      },
+      {
+        "type": "folder",
+        "value": "miniprogram_npm/@vant/weapp/card"
+      },
+      {
+        "type": "folder",
+        "value": "miniprogram_npm/@vant/weapp/circle"
+      },
+      {
+        "type": "folder",
+        "value": "miniprogram_npm/@vant/weapp/dialog"
+      },
+      {
+        "type": "folder",
+        "value": "miniprogram_npm/@vant/weapp/nav-bar"
+      },
+      {
+        "type": "folder",
+        "value": "miniprogram_npm/@vant/weapp/index-bar"
+      },
+      {
+        "type": "folder",
+        "value": "miniprogram_npm/@vant/weapp/index-anchor"
+      },
+      {
+        "type": "folder",
+        "value": "miniprogram_npm/@vant/weapp/uploader"
+      },
+      {
+        "type": "folder",
+        "value": "miniprogram_npm/@vant/weapp/goods-action"
+      },
+      {
+        "type": "folder",
+        "value": "miniprogram_npm/@vant/weapp/goods-action-button"
+      },
+      {
+        "type": "folder",
+        "value": "miniprogram_npm/@vant/weapp/goods-action-icon"
+      },
+      {
+        "type": "folder",
+        "value": "miniprogram_npm/@vant/weapp/tabs"
+      },
+      {
+        "type": "folder",
+        "value": "miniprogram_npm/@vant/weapp/tab"
+      },
+      {
+        "type": "folder",
+        "value": "miniprogram_npm/@vant/weapp/tree-select"
+      },
+      {
+        "type": "folder",
+        "value": "miniprogram_npm/@vant/weapp/rate"
+      },
+      {
+        "type": "folder",
+        "value": "miniprogram_npm/@vant/weapp/steps"
+      },
+      {
+        "type": "folder",
+        "value": "miniprogram_npm/@vant/weapp/sidebar"
+      },
+      {
+        "type": "folder",
+        "value": "miniprogram_npm/@vant/weapp/sidebar-item"
+      },
+      {
+        "type": "folder",
+        "value": "miniprogram_npm/@vant/weapp/submit-bar"
+      }
+    ]
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "lazyloadPlaceholderEnable": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "useIsolateContext": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "disableUseStrict": false,
+    "showES6CompileOption": false,
+    "useCompilerPlugins": false
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.9.5",
+  "appid": "wx0c26da80837d466d",
+  "projectname": "weapp-template",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "scripts": {},
+  "staticServerOptions": {
+    "baseURL": "",
+    "servePath": ""
+  },
+  "isGameTourist": false,
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": []
+    }
+  }
+}

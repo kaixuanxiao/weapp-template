@@ -1,0 +1,15 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarBackgroundColor": "#00CD96",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "gd-navigation-bar": "@gd/weui/gd-navigation-bar/gd-navigation-bar",
+    "gd-button": "@gd/weui/gd-button/gd-button",
+    "gd-cells": "@gd/weui/gd-cells/gd-cells",
+    "gd-cell": "@gd/weui/gd-cell/gd-cell",
+    "user-info": "../../components/stateful/user-info/user-info",
+    "page-top-bg": "/components/page-top-bg/page-top-bg",
+    "gd-vant-tabbar": "/components/gd-vant-tabbar/gd-vant-tabbar"
+  }
+}

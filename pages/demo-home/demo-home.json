@@ -1,0 +1,12 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarBackgroundColor": "#00CD96",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "gd-navigation-bar": "@gd/weui/gd-navigation-bar/gd-navigation-bar",
+    "gd-cells": "@gd/weui/gd-cells/gd-cells",
+    "gd-cell": "@gd/weui/gd-cell/gd-cell",
+    "gd-vant-tabbar": "/components/gd-vant-tabbar/gd-vant-tabbar"
+  }
+}

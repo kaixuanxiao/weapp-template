@@ -1,0 +1,9 @@
+/* pages/demo-list/demo-list.wxss */
+.page-content {
+  padding: 0 32rpx;
+}
+.list-item {
+  padding: 5rpx 20rpx;
+  line-height: 2;
+  border-bottom: solid 1px #ebebeb;
+}

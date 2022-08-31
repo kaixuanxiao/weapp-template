@@ -1,0 +1,5 @@
+<view><text class="title">基础数量：</text><text class="value">{{base}}</text></view>
+<view><text class="title">数量：</text><text class="value">{{count}}</text></view>
+<view><text class="title">最终数量：</text><text class="value">{{totalCount}}</text></view>
+<gd-button type="primary" size="small" bindtap="onDecrease">-</gd-button>
+<gd-button type="primary" size="small" bindtap="onIncrease">+</gd-button>

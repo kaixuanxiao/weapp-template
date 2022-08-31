@@ -1,0 +1,6 @@
+/* components/page-top-bg/page-top-bg.wxss */
+.page-top-bg {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}

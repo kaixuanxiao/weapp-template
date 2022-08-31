@@ -1,0 +1,35 @@
+.van-search-green.van-search {
+  padding: 10px 15px;
+  background-color: #00cd96 !important;
+}
+
+.van-search-green.van-search--withaction {
+  padding-right: 5px;
+}
+
+.van-search-green .van-search__content {
+  background: #08b486;
+  border-radius: 10rpx;
+}
+
+.van-search-green .van-search__action {
+  color: white;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.van-search-green .van-search__action--hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.van-search-green .van-search__field .van-cell {
+  color: white;
+}
+
+.van-search-green .van-field__control {
+  color: white;
+}
+
+.van-search-green .van-field__placeholder {
+  color: #b5e8da;
+}

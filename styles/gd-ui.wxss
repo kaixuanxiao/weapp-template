@@ -1,0 +1,121 @@
+page{
+  /* 基础颜色 */
+  --gd-c-primary: #00cd96;  
+  --gd-c-font-1: #333;
+  --gd-c-font-2: #666;
+  --gd-c-font-3: #999;
+  --gd-c-bg-1: #f7f8fa;
+  --gd-c-bg-2: #f2f3f5;
+  --gd-c-line-1: #f2f3f5;
+  --gd-c-line-2: #dcdee0;
+  --gd-c-disable: #c8c9cc;
+  
+  /* ---- vant变量定制 ---- */
+  /* 按钮 */
+  --button-primary-background-color: var(--gd-c-primary);
+  --button-primary-border-color: var(--gd-c-primary);
+  --button-default-border-color: var(--gd-c-line-2);
+  /* --button-border-radius: 8rpx; */
+  --button-border-radius: 44rpx;
+  --button-disabled-opacity: .3
+  /* ---- vant变量定制 ---- */
+}
+
+/* 基础类 字体颜色 */
+.gd-color-font-1{
+  color: var(--gd-c-font-1);
+}
+.gd-color-font-2{
+  color: var(--gd-c-font-2);
+}
+.gd-color-font-3{
+  color: var(--gd-c-font-3);
+}
+
+/* 基础类 字体大小 */
+.gd-size-font-24{
+  font-size: 24rpx;
+}
+.gd-size-font-28{
+  font-size: 28rpx;
+}
+.gd-size-font-32{
+  font-size: 32rpx;
+}
+.gd-size-font-36{
+  font-size: 36rpx;
+}
+.gd-size-font-40{
+  font-size: 40rpx;
+}
+
+/* 基础类 背景色 */
+.gd-c-bg-primary {
+  background-color: var(--gd-c-primary);
+}
+.gd-c-bg-1{
+  background-color: var(--gd-c-bg-1);
+}
+.gd-c-bg-2{
+  background-color: var(--gd-c-bg-1);
+}
+
+/* vant重写 */
+.van-button--active:before{
+  opacity:.2!important
+}
+.gd-bt-icon{
+  width: 42rpx;
+  height: 42rpx;
+  vertical-align: middle;
+  margin-right: 6rpx;
+}
+
+.van-button--primary.van-button--plain.van-button--active:before{
+  background:var(--button-primary-border-color);
+  opacity:.08!important
+}
+.van-button--default.van-button--active{
+  color: #C8C9CC;
+}
+.van-button--default.van-button--active:before{
+  background:#DCDEE0;
+}
+.van-button--default.van-button--disabled{
+  background:#fff;
+  opacity: 1;
+  color: var(--gd-c-disable);
+}
+.van-button--disabled.van-button--active:before{
+  display: none;
+}
+.gd-bt-group-0,.gd-bt-group-1,.gd-bt-group-2{
+  background: #fff;
+  padding: 10rpx 32rpx;
+}
+.gd-bt-group-1 .van-button--default{
+  width: 50%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+}
+.gd-bt-group-1 .van-button--primary{
+  width: 50%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 0;
+}
+.gd-bt-group-2::after{
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.gd-bt-group-2 .van-button--default{
+  width: calc(50% - 12rpx);
+  float: left;
+}
+.gd-bt-group-2 .van-button--primary{
+  width: calc(50% - 12rpx);
+  float: right;
+}

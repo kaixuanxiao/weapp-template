@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "gd-button": "@gd/weui/gd-button/gd-button",
+    "gd-cells": "@gd/weui/gd-cells/gd-cells",
+    "gd-form-cell": "@gd/weui/gd-form-cell/gd-form-cell",
+    "user-info": "/components/stateful/user-info/user-info"
+  }
+}

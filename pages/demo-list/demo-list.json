@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "Demo 列表",
+  "navigationBarBackgroundColor": "#00CD96",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "search-bar": "/components/search-bar/search-bar"
+  }
+}

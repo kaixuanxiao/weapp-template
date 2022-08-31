@@ -1,0 +1,6 @@
+
+<search-bar value="{{searchInput}}" placeholder="请输入" bind:input="onSearchInput"></search-bar>
+
+<view class="page-content">
+  <view class="list-item" wx:for="{{listData}}" wx:key="index">{{item}}</view>
+</view>

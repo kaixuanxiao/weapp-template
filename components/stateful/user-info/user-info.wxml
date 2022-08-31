@@ -1,0 +1,12 @@
+<gd-cells title="component: user-info">
+  <gd-cell title="登录状态（未映射无法获取）：" value="{{loginStatus || '--'}}" />
+  <gd-cell title="姓名（深度映射）：" value="{{userInfo.name}}" />
+  <gd-cell title="姓名（浅度映射）：" value="{{shallowUser.userInfo.name}}" />
+  <gd-cell title="年龄（深度映射）：" value="{{userInfo.age}}" />
+  <gd-cell title="年龄（浅度映射）：" value="{{shallowUser.userInfo.age}}" />
+</gd-cells>
+
+<view style="padding: 0 16px;">
+  <view style="color: gray; margin: 10px 0;">reset未映射到store无法触发</view>
+  <gd-button type="primary" bindtap="reset" block custom-style="margin: 10px 0;">重置 bindtap=reset</gd-button>
+</view>
